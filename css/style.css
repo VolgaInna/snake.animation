@@ -1,0 +1,134 @@
+
+body {
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+}
+.square {
+	width: 600px;
+	height: 600px;
+	background: #fff3e1;
+	border: 3px solid #e35fbc; 
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+
+}
+
+.section {
+	width: 300px;
+	height: 300px;
+	border: 2px solid #e35fbc; 
+	box-sizing: border-box;
+}
+.snake {
+	position: absolute;
+	height: 5px;
+	width: 5px;
+	background: black;
+
+	animation-name: snake_1;
+	animation-duration: 7s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes snake_1 {
+	0% {
+		left: 300px;
+		top: 0;
+		background: blue;
+	}
+
+	8% {
+		left: 300px;
+		top: 0;
+		height: 600px;
+		background: grey;
+	}
+
+	16% {
+		left: 300px;
+		top: 600px;
+		height: 5px;
+		width: 5px;
+		background: yellow;
+
+	}
+
+	24% {
+		left: 0px;
+		top: 600px;
+		width: 300px;
+		background: yellow;
+	}
+
+	33% {
+		left: 0;
+		top: 600px;
+		width: 5px;
+		height: 5px;
+		background: yellow;
+	}
+
+	41% {
+		left: 0;
+		top: 300px;
+		height: 300px;
+		background: red;
+	}
+
+	49% {
+		left: 0;
+		top: 300px;
+		height: 5px;
+		width: 5px;
+		background: red;
+	}
+
+	57% {
+		left: 0;
+		top: 300px;
+		width: 600px;
+		background: red;
+	}
+
+	66% {
+		left: 600px;
+		top: 300px;
+		width: 5px;
+		height: 5px;
+		background: white;
+	}
+
+	74% {
+		left: 600px;
+		top: 0;
+		width: 5px;
+		height: 300px;
+		background: white;
+}
+	82% {
+		left: 600px;
+		top: 0;
+		height: 5px;
+		width: 5px;
+		background: blue;
+	}
+
+	90% {
+		left: 300px;
+		top: 0;
+		width: 300px;
+		background: blue;
+	}
+	100% {
+		left: 300px;
+		top: 0;
+		width: 5px;
+		background: blue;
+	}
+
+
+}
+
